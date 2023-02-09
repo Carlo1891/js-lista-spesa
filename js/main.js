@@ -8,13 +8,21 @@
 const groceryList = [
     'pane',
     'latte',
-    'uova'
+    'uova',
+    'farina',
+    'burro'
 ];
 
 console.log (groceryList);
 
 let i = 0;
 
+while (i < groceryList.length){
+    const groceryElement = document.createElement ('li');
+    groceryElement.innerHTML = groceryList [i];
+    document.getElementById ('grocery-list').append (groceryElement);
+    i++;
+}
 
 
 
